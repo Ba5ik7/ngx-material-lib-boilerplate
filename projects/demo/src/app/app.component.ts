@@ -3,11 +3,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  standalone: true,
-  imports: [NavbarComponent, RouterModule],
   selector: 'ngx-demo-app',
   template: `
-    <ngx-navbar class="mat-elevation-z6"></ngx-navbar>
+    <ngx-navbar></ngx-navbar>
     <router-outlet></router-outlet>
   `,
   styles: [`
@@ -16,8 +14,8 @@ import { RouterModule } from '@angular/router';
       flex-direction: column;
       height: 100vh;
     }
-  `]
+  `],
+  standalone: true,
+  imports: [NavbarComponent, RouterModule],
 })
-export class AppComponent {
-  title = 'demo';
-}
+export class AppComponent { }
