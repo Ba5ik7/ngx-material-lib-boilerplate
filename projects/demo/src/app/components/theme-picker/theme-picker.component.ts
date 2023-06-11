@@ -25,8 +25,8 @@ export class ThemePickerComponent implements OnInit {
     ['spring', 'Spring'],
     ['summer', 'Summer'],
     ['synthwave', 'Synthwave'],
-    ['winter', 'Winter'],
     ['vanguard', 'Vanguard'],
+    ['winter', 'Winter'],
   ]);
 
   constructor(
