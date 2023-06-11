@@ -15,11 +15,11 @@ $_theme: mat.define-light-theme($_primary, $_accent);
 //  If you specify typography styles for the components you use elsewhere, you should delete this line.
 //  If you don't need the default component typographies but still want the hierarchy styles,
 //  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+//    `@include mat.legacy-typography-hierarchy(mat.define-typography-config());`
+@include mat.all-component-typographies();
+@include mat.core();
 
-@include mat.all-legacy-component-themes($_theme);
+@include mat.all-component-themes($_theme);
 @include app-theme.theme($_theme);
 
 // It's only been a week since IE has die and now this on Edge
