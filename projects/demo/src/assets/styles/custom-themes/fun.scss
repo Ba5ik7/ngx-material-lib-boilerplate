@@ -21,10 +21,11 @@ $fun-theme: mat.define-dark-theme((
   background-color: #AD1457;
 }
 
-.mat-mdc-card, .mat-mdc-dialog-container, .mat-mdc-card-outlined{
+.mat-mdc-card,
+.mat-mdc-card-outlined,
+mat-card.mat-mdc-card.mdc-card {
   background-color: #C2185B;
 }
-
 
 .successful-text {
   color: #43A047;
