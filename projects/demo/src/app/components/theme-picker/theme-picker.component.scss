@@ -1,32 +1,67 @@
 .theme-picker-menu {
   .mat-mdc-menu-item {
     .mat-icon.theme-example-icon {
-      margin-right: 0;
-      margin-left: 8px;
+      margin-right: 9px;
       float: right;
 
       svg {
         vertical-align: middle;
       }
 
-      &.deeppurple-amber svg {
+      &.educational svg {
         .theme-icon-background {
-          fill: #fafafa;
+          fill: #4527A0;
         }
         .theme-icon-button {
-          fill: #FFC107;
+          fill: #40c4ff;
         }
         .theme-icon-toolbar {
-          fill: #673AB7;
+          fill: #673ab7;
         }
       }
 
-      &.indigo-pink svg {
+      &.fall svg {
+        .theme-icon-background {
+          fill: #4E3732;
+        }
+        .theme-icon-button {
+          fill: #f44336;
+        }
+        .theme-icon-toolbar {
+          fill: #ffc107;
+        }
+      }
+
+      &.fun svg {
+        .theme-icon-background {
+          fill: #AD1457;
+        }
+        .theme-icon-button {
+          fill: #ffab40;
+        }
+        .theme-icon-toolbar {
+          fill: #e91e63;
+        }
+      }
+
+      &.indigo-amber svg {
         .theme-icon-background {
           fill: #fafafa;
         }
         .theme-icon-button {
-          fill: #E91E63;
+          fill: #ffd740;
+        }
+        .theme-icon-toolbar {
+          fill: #3F51B5;
+        }
+      }
+
+      &.indigo-green svg {
+        .theme-icon-background {
+          fill: #303030;
+        }
+        .theme-icon-button {
+          fill: #69f0ae;
         }
         .theme-icon-toolbar {
           fill: #3F51B5;
@@ -45,6 +80,18 @@
         }
       }
 
+      &.professional svg {
+        .theme-icon-background {
+          fill: #37474F;
+        }
+        .theme-icon-button {
+          fill: #ffd740;
+        }
+        .theme-icon-toolbar {
+          fill: #607d8b;
+        }
+      }
+
       &.purple-green svg {
         .theme-icon-background {
           fill: #303030;
@@ -54,6 +101,66 @@
         }
         .theme-icon-toolbar {
           fill: #9C27B0;
+        }
+      }
+
+      &.spring svg {
+        .theme-icon-background {
+          fill: #465A61;
+        }
+        .theme-icon-button {
+          fill: #ff80ab;
+        }
+        .theme-icon-toolbar {
+          fill: #009688;
+        }
+      }
+
+      &.summer svg {
+        .theme-icon-background {
+          fill: #2A3C48;
+        }
+        .theme-icon-button {
+          fill: #ff6e40;
+        }
+        .theme-icon-toolbar {
+          fill: #2196f3;
+        }
+      }
+
+      &.synthwave svg {
+        .theme-icon-background {
+          fill: #2B213A;
+        }
+        .theme-icon-button {
+          fill: #00bcd4;
+        }
+        .theme-icon-toolbar {
+          fill: #4a148c;
+        }
+      }
+
+      &.vanguard svg {
+        .theme-icon-background {
+          fill: #2C3E50;
+        }
+        .theme-icon-button {
+          fill: #1565c0;
+        }
+        .theme-icon-toolbar {
+          fill: #c8102e;
+        }
+      }
+
+      &.winter svg {
+        .theme-icon-background {
+          fill: #2C3187;
+        }
+        .theme-icon-button {
+          fill: #40c4ff;
+        }
+        .theme-icon-toolbar {
+          fill: #00bcd4;
         }
       }
     }

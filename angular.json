@@ -33,23 +33,68 @@
               },
               {
                 "inject": false,
-                "input": "projects/demo/src/styles/custom-themes/pink-bluegrey.scss",
+                "input": "projects/demo/src/assets/styles/custom-themes/pink-bluegrey.scss",
                 "bundleName": "pink-bluegrey"
               },
               {
                 "inject": false,
-                "input": "projects/demo/src/styles/custom-themes/deeppurple-amber.scss",
-                "bundleName": "deeppurple-amber"
+                "input": "projects/demo/src/assets/styles/custom-themes/indigo-amber.scss",
+                "bundleName": "indigo-amber"
               },
               {
                 "inject": false,
-                "input": "projects/demo/src/styles/custom-themes/indigo-pink.scss",
-                "bundleName": "indigo-pink"
+                "input": "projects/demo/src/assets/styles/custom-themes/indigo-green.scss",
+                "bundleName": "indigo-green"
               },
               {
                 "inject": false,
-                "input": "projects/demo/src/styles/custom-themes/purple-green.scss",
+                "input": "projects/demo/src/assets/styles/custom-themes/purple-green.scss",
                 "bundleName": "purple-green"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/educational.scss",
+                "bundleName": "educational"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/professional.scss",
+                "bundleName": "professional"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/synthwave.scss",
+                "bundleName": "synthwave"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/fun.scss",
+                "bundleName": "fun"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/spring.scss",
+                "bundleName": "spring"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/summer.scss",
+                "bundleName": "summer"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/fall.scss",
+                "bundleName": "fall"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/winter.scss",
+                "bundleName": "winter"
+              },
+              {
+                "inject": false,
+                "input": "projects/demo/src/assets/styles/custom-themes/vanguard.scss",
+                "bundleName": "vanguard"
               }
             ],
             "scripts": []

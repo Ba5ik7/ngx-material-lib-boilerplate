@@ -14,10 +14,19 @@ export class ThemePickerComponent implements OnInit {
 
   currentTheme: string | undefined;
   themes: Map<string, string> = new Map([
-    ['deeppurple-amber', 'Deep Purple & Amber'],
-    ['indigo-pink', 'Indigo & Pink'],
+    ['educational', 'Educational'],
+    ['fall', 'Fall'],
+    ['fun', 'Fun'],
+    ['indigo-amber', 'Indigo & Amber'],
+    ['indigo-green', 'Indigo & Green'],
     ['pink-bluegrey', 'Pink & Blue-grey'],
-    ['purple-green', 'Purple & Green']
+    ['professional', 'Professional'],
+    ['purple-green', 'Purple & Green'],
+    ['spring', 'Spring'],
+    ['summer', 'Summer'],
+    ['synthwave', 'Synthwave'],
+    ['winter', 'Winter'],
+    ['vanguard', 'Vanguard'],
   ]);
 
   constructor(

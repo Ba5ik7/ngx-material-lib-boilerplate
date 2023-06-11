@@ -1,8 +1,8 @@
 @use '@angular/material' as mat;
 
 @use 'sass:map';
-@use './app/pages/home/home-theme';
-@use './app/components/navbar/navbar-theme';
+@use './pages/home/home-theme';
+@use './components/navbar/navbar-theme';
 
 // Styles for the docs app that are based on the current theme.
 @mixin theme($theme) {
