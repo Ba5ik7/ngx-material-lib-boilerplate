@@ -7,7 +7,7 @@ import { ThemePickerComponent } from '../theme-picker/theme-picker.component';
 @Component({
   selector: 'ngx-navbar',
   template: `
-    <nav class="navbar-header">
+    <nav class="navbar-header mat-elevation-z6">
       <a mat-button routerLink="/" class="demo-logo-container">
         <mat-icon class="demo-logo">tips_and_updates</mat-icon>
         <span>Terry-Lib</span>
@@ -17,6 +17,12 @@ import { ThemePickerComponent } from '../theme-picker/theme-picker.component';
     </nav>
   `,
   styles: [`
+    :host {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
     .navbar-header {
       display: flex;
       flex-wrap: wrap;
