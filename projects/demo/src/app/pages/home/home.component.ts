@@ -10,7 +10,7 @@ import { TerryLibModule } from 'terry-lib';
     <header class="header-background">
       <div class="header-section">
         <div class="header-headline">
-          <h1>Terry Lib</h1>
+          <h1>Terry-Lib</h1>
           <h2>Custom Themeable Angular Material Component</h2>
         </div>
         <div class="header-start">
@@ -20,9 +20,15 @@ import { TerryLibModule } from 'terry-lib';
     </header>
     <main class="home-main">
       <mat-card>
-        <h2>Editor Js</h2>
-        <mat-divider></mat-divider>
-        <terry-lib></terry-lib>
+        <mat-card-header>
+          <h2>A demo of your sharable Angular component</h2>
+        </mat-card-header>
+        <mat-divider class="header-main-divider"></mat-divider>
+        <mat-card-content>
+          <div>
+            <terry-lib></terry-lib>
+          </div>
+        </mat-card-content>
       </mat-card>
     </main>
   `,
