@@ -18,8 +18,8 @@ export interface SessionStorage {
 })
 export class WebstorageService {
 
-  LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR = 'LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR';
-  LOCAL_STORAGE_MAX_SIZE_REACHED = 'LOCAL_STORAGE_MAX_SIZE_REACHED';
+  static LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR = 'LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR';
+  static LOCAL_STORAGE_MAX_SIZE_REACHED = 'LOCAL_STORAGE_MAX_SIZE_REACHED';
 
   localStorageValueChangeSub: Subject<LocalStorage> = new Subject();
   localStorageValueChange$: Observable<LocalStorage> = this.localStorageValueChangeSub.asObservable();
@@ -29,7 +29,7 @@ export class WebstorageService {
   }
 
   getLocalstorageItem(key: string): LocalStorage {
-    const item = { key, value: localStorage.getItem(key) ?? this.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR };
+    const item = { key, value: localStorage.getItem(key) ?? WebstorageService.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR };
     this.localStorageValueChangeSub.next(item);
     return item;
   }
@@ -40,8 +40,8 @@ export class WebstorageService {
   }
   
   removeLocalstorageItem(key: string): void {
-    const item = { key, value: localStorage.getItem(key) ?? this.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR };
-    item.value !== this.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR && localStorage.removeItem(key); 
+    const item = { key, value: localStorage.getItem(key) ?? WebstorageService.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR };
+    item.value !== WebstorageService.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR && localStorage.removeItem(key); 
     this.localStorageValueChangeSub.next(item);
   }
 

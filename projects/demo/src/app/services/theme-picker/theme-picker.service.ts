@@ -8,7 +8,7 @@ import { LocalStorage, WebstorageService } from '../../services/webstorage/webst
 })
 export class ThemePickerService {
   static THEME_EXAMPLE_ICON = 'assets/img/theme-demo-icon.svg';
-  static DEFAULT_THEME = 'indigo-pink';
+  static DEFAULT_THEME = 'professional';
   static STRORAGE_KEY = 'theme-picker-current-name';
   static NOT_FOUND = 'NOT_FOUND';
 
@@ -21,7 +21,7 @@ export class ThemePickerService {
 
   init(): void {
     const themeName = this.getStoredThemeName();
-    const theme = themeName.value !== ThemePickerService.NOT_FOUND ? themeName.value : ThemePickerService.DEFAULT_THEME;
+    const theme = themeName.value !== WebstorageService.LOCAL_STORAGE_ITEM_NOT_FOUND_ERROR ? themeName.value : ThemePickerService.DEFAULT_THEME;
     this.setStyle('theme', `${theme}.css`);
     this.storeTheme(theme);
     this.currentTheme$.next(theme);
