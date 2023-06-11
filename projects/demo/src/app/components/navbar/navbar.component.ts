@@ -13,7 +13,7 @@ import { ThemePickerComponent } from '../theme-picker/theme-picker.component';
         <span>Terry-Lib</span>
       </a>
       <div class="flex-spacer"></div>
-      <theme-picker></theme-picker>
+      <ngx-theme-picker></ngx-theme-picker>
     </nav>
   `,
   styles: [`

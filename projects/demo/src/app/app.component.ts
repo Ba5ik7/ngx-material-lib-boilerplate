@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   imports: [NavbarComponent, RouterModule],
   selector: 'ngx-demo-app',
   template: `
-    <navbar class="mat-elevation-z6"></navbar>
+    <ngx-navbar class="mat-elevation-z6"></ngx-navbar>
     <router-outlet></router-outlet>
   `,
   styles: [`
