@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve demo",
-    "build": "ng build demo --configuration development",
-    "watch": "ng build terry-lib --watch --configuration development",
-    "test": "ng test"
+    "build-demo": "ng build demo --configuration production",
+    "build-terry-lib": "ng build terry-lib --configuration production",
+    "watch-terry-lib": "ng build terry-lib --watch --configuration development",
+    "test": "ng test",
+    "bump-versions": "node ./tools/npm-bump-versions.js"
   },
   "private": true,
   "dependencies": {
